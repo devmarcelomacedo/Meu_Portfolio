@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA Soluções | Portfólio de Tecnologia</title>
+    <link rel="icon" type="image/jpeg" href="img/favicon.png.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <nav class="container">
+            <div class="logo">MA <span>Soluções</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#certificacoes">Certificações</a></li>
+                <li><a href="https://wa.me/55SEUNUMERO" class="btn-primary">WhatsApp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="container text-center">
+            <span class="badge">Analista Pleno | Especialista Oracle</span>
+            <h1>Tecnologia e Governança</h1>
+            <div class="pitch-card">
+                <p>"Unimos a governança do ITIL 4 à agilidade das nuvens Oracle e Azure para garantir que a tecnologia seja uma facilitadora estratégica para o seu negócio."</p>
+            </div>
+        </section>
+
+        <section id="certificacoes" class="container">
+            <h2 class="section-title">Central de Credenciais Técnicas</h2>
+            
+            <div class="cert-gallery">
+                <div class="category-title">Cloud & ERP Oracle</div>
+                <div class="cert-card" onclick="abrirModal('img/ORACLE SCM.png')"><i><img src="./img/ORACLE SCM.png" width="30px" ></i><h4>Oracle SCM</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/HCM ORACLE.png')"><i><img src="./img/HCM ORACLE.png" width="30px"></i><h4>HCM Oracle</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/ERP.1.png')"><i><img src="./img/ERP.1.png" width="30px"></i><h4>ERP.1</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/ORACLE CX.png')"><i><img src="./img/ORACLE CX.png" width="30px"></i><h4>Oracle CX</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/CERTIFICADO AZURE.jpg')"><i><img src="./img/CERTIFICADO AZURE.jpg" width="30px"></i><h4>Azure AZ-900</h4></div>
+
+                <div class="category-title">Governança & Segurança</div>
+                <div class="cert-card" onclick="abrirModal('img/GOVERNAÇA.jpeg')"><i><img src="img/GOVERNAÇA.jpeg" width="30px" alt=""></i><h4>Governança TI</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/LGPD.png')"><i><img src="./img/LGPD.png" width="30px" alt=""></i><h4>LGPD</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/Compliance - RJ.png')"><i><img src="./img/Compliance - RJ.png" width="30px" alt=""></i><h4>Compliance RJ</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/Segurança Cibernetica.jpg')"><i><img src="./img/Segurança Cibernetica.jpg" width="30px" alt=""></i><h4>Segurança Cibernética</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/ITIL 4.png')"><i><img src="./img/ITIL 4.png" width="30px" alt=""></i><h4>ITIL 4 Foundation completing a course about</h4></div>
+
+                <div class="category-title">Infraestrutura & Especialidades</div>
+                <div class="cert-card" onclick="abrirModal('img/CFTV.png')"><i><img src="./img/CFTV.png" width="30px" alt=""></i><h4>CFTV</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/Redes e Conectividades.jpg')"><i><img src="./img/Redes e Conectividades.jpg" width="30px" alt=""></i><h4>Redes</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/certificado html5 e css3.jfif')"><i><img src="./img/certificado html5 e css3.jfif" width="30px" alt=""></i><h4>HTML5 e CSS3</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/certificado analytcs.jpg')"><i><img src="./img/certificado analytcs.jpg" width="30px" alt=""></i><h4>Web Analytics</h4></div>
+                <div class="cert-card" onclick="abrirModal('img/EBS- Escola Brasileira de solda.jpg')"><i><img src="./img/EBS- Escola Brasileira de solda.jpg" width="30px" alt=""></i><h4>EBS Solda</h4></div>
+            </div>
+        </section>
+
+        <section id="qrcode" class="container text-center">
+            <div class="qr-box">
+                <h3>Portfólio Digital</h3>
+                <div class="qr-image">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://marceloviana.github.io" alt="QR Code">
+                    <img src="img/favicon.png.jpg" class="qr-logo">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modalCert" class="modal" onclick="fecharModal()">
+        <span class="btn-fechar">&times;</span>
+        <img class="modal-img" id="imgFull">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
